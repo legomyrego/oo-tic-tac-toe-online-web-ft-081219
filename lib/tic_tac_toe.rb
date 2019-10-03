@@ -43,7 +43,7 @@ class TicTacToe
   end
 
   def turn
-    puts "Please enter a number (1-9):"
+    puts "enter a number (1-9):"
     user_input = gets.strip
     index = input_to_index(user_input)
     if valid_move?(index)
@@ -85,4 +85,4 @@ class TicTacToe
     turn until over?
     puts winner ? "Congratulations #{winner}!" : "Cat's Game!"
   end
-end 
+end
